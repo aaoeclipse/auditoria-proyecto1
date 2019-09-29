@@ -1,0 +1,268 @@
+#Política de Seguridad
+^Política de Seguridad
+$Existe una Política de Seguridad de la Información, que es aprobada por la dirección, publicada y comunicada según proceda, a todos los empleados?
+$Establecen las políticas un compromiso de las Gerencias con relación al método de la organización para la gestión de la seguridad de la información? 
+$Las políticas de seguridad son revisadas a intervalos regulares, o cuando hay cambios significativos para asegurar la adecuación y efectividad?
+$Las políticas de Seguridad de la Información tiene un propietario, que ha aprobado la responsabilidad de la gestión para el desarrollo, revisión y evaluación de la política de seguridad?
+$Existen procedimientos de revisión de las políticas de seguridad y estos incluyen requerimientos para el manejo de su revisión?
+$Los resultados del revisión de la gestión son tenidos en cuenta?
+$Se obtiene la aprobación de la alta gerencia con relació a las políticas revisadas?
+#Organization de la Seguridad de Información
+^Seguridad de la Información
+$Si la gerencia demuestra soporte activo a las medidas de seguridad dentro de la organización. Esto puede ser realizado por direcciones claras, compromiso demostrado, asignaciones explícitas y conocimiento de las responsabilidades de la seguridad de información.
+$Si las actividades de seguridad de información son coordinadas por representantes de distintas partes de la organización, con sus roles pertinentes y responsabilidades.
+$Están establecidas las responsabilidades de protección de activos individuales y llevar a cabo procesos de seguridad específicos que estén claramente identificados y definidos?
+$Si el proceso de gestión de autorización está definido e implementado para cada nuevo equipo de procesamiento de información dentro de la organización. 
+$Si la organización necesita de confidencialidad o Acuerdos de no Divulgación para protección de información que estén claramente definidos y revisados periódicamente.
+$¿Tiene esta dirección la exigencia de proteger la información confidencial utilizando términos legales exigibles?
+$Existe algún procedimiento que describa cuando y quienes deben contactar a las autoridades competentes, departamento de bomberos, etc y cómo deben reportarse los incidentes?
+$Existen los contactos apropiados con grupos especiales de interés, foros de seguridad o asociaciones profesionales relacionadas con la seguridad?
+$Tiene la organización un enfoque sobre la gestión de la seguridad de información, su implementación, revisión independiente a intervalos regulares o cuando ocurran cambios significativos?
+^Partes Externas
+$Los riesgos inherentes a equipos o sistemas de información de terceros son identificados y luego implementadas medidas de control apropiadas antes de permitir el acceso?
+$Son identificados todos los requerimientos de seguridad sean cumplidos antes de conceder acceso a los clientes a los activos de la organización?
+$Los acuerdos con terceros incluyen accesos, procesamiento, comunicaciones, manejo de la información o equipos que involucren almacenamiento de información que cumplan con todos los requerimientos de seguridad?
+#Administración de Activos
+^Responsibilidad por Activos
+$Son los activos debidamente identificados e inventariados o se mantiene un registro de los activos importantes?
+$Los activos tienen identificados a sus respectivos propietarios y definidas con ellos clasificaciones de datos y restricciones de acceso en base a la criticidad, y estas restricciones revisadas periodicamente?
+$Son identificadas, documentadas e implementadas todas las regulaciones existentes con respecto al uso aceptable de información y activos asociados con el procesamiento de información?
+^Responsibilidad por Activos
+$La información es clasificada en terminos de su valor, requerimientos legales, sensibilidad y criticidad para la organización?
+$Son definidos conjuntos de procedimientos para etiquetado y manejo de la información en concordancia con el esquema de clasificación atoptado por la organización? 
+#Seguridad de Recursos Humanos
+^Previo al Empleo
+$Están claramente definidos y documentados de acuerdo a las políticas de seguridad de información de la organización los roles y responsabilidades de los empleados, contratistas y terceros?
+$Son los roles y responsabilidades definidos previamente, comunicados claramente a los candidatos a empleo durante el proceso de pre empleo?
+$Los controles de verificación de antecedentes para todos los candidatos a empleo, contratistas y terceros, son llevados a cabo de acuerdo a las regulaciones relevantes?
+$Incluye la verificación referencias sobre el carácter, confirmación de titulos académicos, cualidades profesionales y chequeos independientes de identidad?
+$Son firmados con los empleados, contratistas y terceros, contratos de confidencialidad y acuerdos de no divulgación como parte inicial de los términos y condiciones de contratos de trabajo?
+$Estos acuerdos y contratos cubren las responsabilidades de seguridad de información de la organización, los empleados, contratistas y terceros?
+^Durante el Empleo
+$La gestión requiere a los empleados, contratistas y terceros a que apliquen la seguridad en concordancia con las Políticas y Procedimientos establecidos en la Organización?
+$Los empleados, contratistas y terceros reciben la apropiada sensibilización, educación y formación permanente sobre la Seguridad de Información con respecto a sus funciones laborales específicas?
+$Existe un proceso disciplinario para aquellos empleados que incumplen las políticas de seguridad?
+^Terminación o Cambio de Empleo
+$Las responsabilidades de procedimiento de terminación o cambio de empleo están claramente definidas y asignadas? 
+$Existe un procedimiento a seguir con respecto a asegurar que los empleados, contratistas y terceros devuelvan los activos de la organización que estén en su poder al terminar el contrato de empleo?
+$Son removidos los derechos de acceso de todos los empleados, contratistas y terceros a los sistemas de información al termino de empleo o adecuación en caso de que cambien de función?
+#Seguridad Física y Ambiental
+^Areas Seguras
+$Existen mecanismos de control de acceso implementados con respecto al acceso a los sitios de procesamiento de información? Algunos ejemplos son controles biométricos, tarjetas de acceso, separación por muros, control de visitantes, etc.
+$Existen controles de acceso de tal modo a que solo las personas autorizadas puedan ingresar a las distintas areas de la organización?
+$Las salas de servidores u otros equipos de procesamiento (routers, switches, etc.), están apropiadamente resguardadas bajo llave o en cabinas con llave?
+$Se tienen implementadas protecciones o resguardos contra fuego, inundaciones, temblores, explosiones, manifestaciones y otras formas de desastres naturales o provocadas por el hombre?
+$Existe alguna amenaza potencial en los locales vecinos del lugar donde se encuentran las instalaciones?
+$Se tienen procedimientos designados e implementados sobre como trabajar en las areas seguras?
+$Con respecto a las zonas de acceso público, entrega, descarga donde personas no autorizadas pueden acceder, las zonas de procesamiento de información y equipos delicados son aislados y asegurados para prevenir el acceso no autorizado?
+^Areas Seguras
+$Los equipos son protegidos para reducir los riesgos de daños ambientales y oportunidades de acceso no autorizado?
+$Los equipos son protegidos contra fallas eléctricas y otras fallas que pudieran tener (redundancia)?
+$Que mecanismos de protección eléctrica son utilizados? Alimentación multiple, UPS, generador de backup, etc?
+$Los cables de suministro eléctrico y comunicaciones son debidamente protegidos contra intercepción y/o daños?
+$Existen controles adicionales de seguridad con respecto al transporte de información crítica? Por ej. Encriptado en las comunicaciones.
+$Se realiza mantenimiento periódico de los equipos de modo a asegurar la continua disponibilidad e integridad?
+$En la realización de mantenimientos, son respetados los intervalos y recomendaciones de los fabricantes?
+$Los mantenimientos son realizados unicamente por personal capacitado y autorizado?
+$Los logs de alertas de los equipos, son revisados periodicamente para detectar y corregir posibles fallas en los mismos? (principalmente fallas en discos)
+$Se aplican los controles adecuados cuando se envían los equipos fuera de la organización?
+$Todos los equipos están cubiertos por pólizas de seguro y los requerimientos de la Compañía de Seguros están apropiadamente realizados?
+$Existen mecanismos de control y mitigación de riesgos implementados con relación a equipos utilizados fuera de la organización? (encripción de discos de las notebooks, seguro, etc.)
+$En caso de utilización de equipos fuera de la organización, estos cuentan con la autorización respectiva de las gerencias?
+$Cuando se disponga la reutilización de equipos o cuando sean dados de baja, son verificados los medios de almacenamiento con respecto a datos y software licenciado y luego destruidos totalmente antes de su entrega?
+$Existen controles implementados con respecto a que ningún equipo, información y software sea sacado de la organización sin la autorización respectiva?
+#Gestión de Comunicaciones y Operaciones
+^Procedimientos y Responsabilidades Operativas
+$Los procedimientos operativos son documentados, actualizados y están disponibles para todos los usuarios que puedan necesitarlos?
+$Dichos procedimientos son tratados como documentos formales y cualquier cambio en los mismos necesita la autorización pertinente?
+$Son controlados todos los cambios en los sistemas y equipos de procesamiento de información?
+$Son separadas las tareas y responsabilidades de modo a reducir las oportunidades de modificación o mal uso de los sistemas de información?
+$Los equipos de desarrollo y pruebas están separados de los equipos operacionales? Por ejemplo desarrollo de software debe estar en un equipo separado del de producción. Cuando sea necesario, incluso deben estar en segmentos de red distintos unos del otro.
+^Manejo de Entrega de Servicios Tercerizados
+$Existen medidas que son tomadas para asegurar que los controles de seguridad, niveles de servicio y entrega sean incluidos y verificados en los contratos de servicios con terceros, así como su revisión periódica de cumplimiento? 
+$Son los servicios, reportes y registros proveídos por teceros regularmente monitoreados y revisados?
+$Existen controles de auditoría que son realizados a intervalos regulares sobre los servicios, reportes y registros suministrados por terceros?
+$Se gestionan los cambios en la provisión de servicios, incluyendo mantenimiento y la mejora en las políticas de seguridad de información existentes, procedimientos y controles?
+$Se tienen en cuenta sistemas de negocio críticos, procesos involucrados y re-evaluación de riesgos?
+^Planeamiento y Aceptación de Sistemas
+$La capacidad de procesamiento de los sistemas son monitoreados en base a la demanda y proyectados en base a requerimientos futuros, de modo a asegurar que la capacidad de proceso y almacenamiento estén disponibles? ‎ Ejemplo: Monitoreo de espacio en disco, Memoria RAM, CPU en los servidores críticos.
+$Son establecidos criterios de aceptación para nuevos sistemas de información, actualizaciones y nuevas versiones?                                                                               Son realizadas pruebas antes de la aceptación de los mismos?
+^Planeamiento y Aceptación de Sistemas
+$Existen controles para detección, prevención y recuperado contra código malicioso y son desarrollados e implementados procedimientos apropiados de advertencia a los usuarios?
+$En caso de necesitarse código móvil, este solo debe utilizarse una vez que haya sido autorizado. ‎ Las configuraciones del código móvil autorizado deben realizarse y operarse de acuerdo a las Políticas de Seguridad.‎ La ejecución del código móvil no autorizado, debe prevenirse. ‎ ‎(Código Móvil es código de software que se transfiere de una computadora a otra y que se ejecuta automáticamente. Realiza una función específica con muy poca o casi ninguna intervención del usuario.  El código móvil está asociado a un gran número de servicios de middleware)‎
+^Copias de Respaldo
+$Se realizan copias de respaldo de la información y software y son testeados regularmente en conconrdancia con las políticas de backup?
+$Toda la información y el software esencial puede ser recuperado en caso de ocurrencia de un desastre o fallo de medios?
+^Administración de la Seguridad de la Red
+$La red es adecuadamente administrada y controlada para protegerse de tretas y en orden a mantener la seguridad de los sistemas y aplicaciones en uso a traves de la red, incluyendo la información en transito?  
+$Existen controles implementados para asegurar el transito de la información en la red y evitar que esta sea leída o accesada de forma no autorizada? 
+$Las características de seguridad, niveles de servicio y requerimientos de administración de todos los servicios de red son identificados e incluidos en cualquier acuerdo de servicio de red?
+$La capacidad del proveedor de servicios de red de proporcionar los servicios de forma segura, es determinada y regularmente monitoreada y se tienen derechos de auditoría acordada para medir niveles de servicio?
+^Manejo de Medios
+$Existen procedimientos para el manejo de medios removibles como cintas, diskettes, tarjetas de memoria, lectores de CD, pendrives, etc.?
+$Los procedimientos y niveles de autorización están claramente definidos y documentados?
+$En caso de que los medios ya no sean requeridos, estos son eliminados de forma segura bajo procedimientos formalmente establecidos?
+$Existen procedimientos para el manejo del almacenamiento de la información?
+$Aborda este procedimiento temas como: protección de la información contra acceso no autorizado o mal uso?
+$La documentación de los sistemas está protegida contra acceso no autorizado?
+^Intercambio de Información
+$Existe una política formal, procedimientos y/o controles aplicados para asegurar la protección a la información?
+$Estos procedimientos y controles cubren el uso de equipos de comunicación electrónica en el intercambio de información?
+$Existen acuerdos de intercambio de información y software entre la organización y partes externas?
+$El contenido de los acuerdos con respecto a la seguridad refleja la sensibilidad y criticidad de la información de negocio envuelta en el proceso?
+$Los medios físicos que contengan información es protegida contra acceso no autorizado, mal uso o corrupción de datos durante el transporte entre las organizaciones?
+$La información que se envía por mensajería electrónica es bien protegida?‎ ‎(Mensajería Electrónica incluye pero no es restringida solamente a email, intercambio electrónico de datos, mensajería instantanea, etc.)‎
+$Las políticas y procedimientos son desarrolladas y tendientes a fortalecer la protección de información asociada con la interconexión de sistemas de negocio?
+^Servicios de Comercio Electrónico
+$La información envuelta en el comercio electrónico cruza a través de redes publicas y está protegida contra actividades fraudulenteas, posibles disputas contractuales o cualquier acceso no autorizado que permita lectura o manipulación de esos datos?
+$En los controles de seguridad son tenidos en cuenta la aplicación de controles criptográficos?
+$El comercio electrónico entre los socios comerciales incluyen un acuerdo, que compromete a ambas partes a la negociación de los términos convenidos, incluidos los detalles de las cuestiones de seguridad?
+$La información envuelta en transacciones en línea está protegida contra transmisiones incompletas, mal ruteo, alteración de mensajería, divulgación no autorizada, duplicación no autorizada o replicación?
+$La integridad de la información disponible publicamente está protegida contra modificación no autorizada?
+^Monitoreo 
+$Los registros de auditoría que guardan la actividad de los usuarios, excepciones, eventos de seguridad de información que ocurren, se guardan por un periodo razonable de tiempo de tal modo a poder realizar investigaciones futuras y monitoreo de acceso?
+$ Se tienen en consideración medidas de protección a la privacidad en el mantenimiento de registros de auditoría?
+$Son desarrollados procedimientos de monitoreo de equipos de procesamiento de datos?
+$El resultado de la actividad de monitoreo es revisada regularmente de forma periódica?
+$Los niveles de monitoreo requeridos por los equipos de procesamiento de información son determinados por un análisis de riesgos?
+$Los equipos que contienen los registros y logs de auditoría son bien protegidos contra posibles manipulaciones y acceso no autorizado?
+$Las actividades de los Administradores y Operadores de sistemas son registradas en los logs?
+$Son revisados regularmente los logs?
+$Las fallas son registradas en logs, y luego analizadas y acciones apropiadas realizadas en consecuencia?
+$Los niveles de registros en logs requeridos para cada sistema individual son determinados en base a análisis de riesgos y la degradación de performance es tenida en cuenta?‎
+$Los relojes de todos los sistemas de información están sincronizados en base a una misma fuente de tiempo exacta acordada?‎ ‎(La correcta sincronización de los relojes es importante para asegurar la cronología de eventos en los logs)‎
+#Monitoreo 
+^Requerimientos del Negocio para Control de Acceso
+$Las políticas de control de acceso son desarrolladas y revisadas basadas en los requerimientos de seguridad del negocio?
+$Los controles de acceso tanto físico como lógico son tenidos en cuenta en las políticas de control de acceso?
+$Tanto a los usuarios como a los proveedores de servicios se les dio una clara declaración de los requisitos de la empresa en cuanto a  control de acceso?
+^Administración de Accesos de Usuarios
+$Existe algún procedimiento formal de altas/bajas de usuarios para acceder a los sistemas?
+$La asignación y uso de privilegios en los sistemas de información, es restringida y controlada en base a las necesidades de uso y dichos privilegios son solo otorgados bajo un esquema formal de autorización?
+$La asignación y reasignación de contraseñas debe controlarse a través de un proceso de gestión formal.
+$Se les solicita a los usuarios que firmen un acuerdo de confidencialidad del password?
+$Existe un proceso de revisión de privilegios y derechos de acceso a intervalos regulares. Por ejemplo: Privilegios especiales cada 3 meses, privilegios normales cada 6 meses?
+^Responsabilidades de Usuarios
+$Existe alguna práctica de seguridad en el sitio para guiar a la selección y mantenimiento de contraseñas seguras?
+$Los usuarios y terceros son concientes de los requisitos de seguridad y procedimientos para proteger los equipos desatendidos? ‎ Por ejemplo: Salir del sistema cuando las sesiones son terminadas o configurar terminación automática de sesiones por tiempo de inactividad, etc.
+$La organización ha adoptado una política de escritorio limpio con relación a los papeles y dispositivos de almacenamiento removibles?
+$La organización ha adoptado una política de pantalla limpia con relación a los equipos de procesamiento de información?
+^Control de Acceso a la Red
+$Se le provee a los usuarios acceso unicamente a los servicios de red a los cuales han sido autorizados específicamente?
+$Existen políticas de seguridad relacionadas con la red y los servicios de red?
+$Son utilizados mecanismos apropiados de autenticación para controlar el acceso remoto de los usuarios?
+$Son considerados equipos de identificación automática para autenticar conexiones desde equips y direcciones específicas?
+$Los accesos físicos y lógicos a puertos de diagnóstico están apropiadamente controlados y protegidos por mecanismos de seguridad?
+$Los grupos de servicios de información, usuarios y sistemas de información son segregados en la red?
+$La red (desde donde asociados de negocios o terceros necesitan acceder a los sistemas de información) es segregada utilizando mecanismos de seguridad perimetral como firewalls?‎
+$En la segregación de la red son hechas las consideraciones para separar las redes wireles en internas y privadas?
+$Existe una política de control de acceso que verifique conexiones provenientes de redes compartidas, especialmente aquellas que se extienden mas allá de los límites de la organización?
+$Existen políticas de control de acceso que establezcan los controles que deben ser realizados a los ruteos implementados en la red?
+$Los controles de ruteo, están basados en mecanismos de identificación positiva de origen y destino?
+^Controles de Acceso a Sistemas Operativos
+$Los accesos a sistemas operativos son controlados por procedimientos de log-on seguro?
+$Un único identificador de usuario (user ID) es proveído a cada usuario incluyendo operadores, administradores de sistemas y otros técnicos?
+$Se eligen adecuadas técnicas de autenticación para demostrar la identidad declarada de los usuarios?
+$El uso de cuentas de usuario genéricas son suministradas sólo en circunstancias especiales excepcionales, donde se especifícan los beneficios claros de su utilización. Controles adicionales pueden ser necesarios para mantener la seguridad.
+$Existe un sistema de gestión de contraseñas que obliga al uso de controles como contraseña individual para auditoría, periodicidad de caducidad, complejidad mínima, almacenamiento encriptado, no despliegue de contraseñas por pantalla, etc.?
+$En caso de existir programas utilitarios capaces de saltarse los controles de aplicaciones de los sistemas, estos están restringidos y bien controlados?
+$Las aplicaciones son cerradas luego de un periodo determinado de inactividad?‎ ‎(Un tiempo determinado de inactividad puede ser determinado por algunos sistemas, que limpian la pantalla para prevenir acceso no autorizado, pero no cierra la aplicación o las sesiones de red)
+$Existen restricciones limitando el tiempo de conexión de aplicaciones de alto riesgo? Este tipo de configuraciones debe ser considerada para aplicaciones sensitivas cuyas terminales de acceso se encuentran en lugares de riesgo.
+^Control de Acceso a las Aplicaciones y a la Información
+$El acceso a la información y los sistemas de aplicaciones por parte los usuarios y personal de soporte, está restringido en concordancia con las políticas de control de acceso definidas?
+$Aquellos sistemas considerados sensibles, están en ambientes aislados, en computadoras dedicadas para el efecto, con recursos compartidos con aplicaciones seguras y confiables, etc?
+^Computación Móvil y Teletrabajo
+$Existe una política formal y medidas apropiadas de seguridad adoptadas para protegerse contra riesgo de utilización de computación móvil y equipos de comunicación?
+$Algunos ejemplos de computación móvil y equipos de telecomunicación incluyen: notebooks, palmtops, ‎laptops, smart cards, celulares. ‎
+$Son tenidos en cuenta los riesgos tales como trabajar en ambientes no protegidos en cuanto a las políticas de computación móvil?
+$Se desarrollan e implementan políticas, planes operativos y procedimientos con respecto a tareas de teletrabajo?
+$Las actividades de teletrabajo, son autorizadas y controladas por las gerencias y existen mecanismos adecuados de control para esta forma de trabajo?
+#Desarrollo, Adquisición y Mantenimiento de Sistemas de Información
+^Requerimientos de Seguridad de los Sistemas de Información
+$Los requerimientos de seguridad para nuevos sistemas de información y fortalecimiento de los sistemas existentes, especifican los requerimientos para los controles de seguridad?
+$Los requerimientos y controles identificados reflejan el valor económico de los activos de información envueltos y las consecuencias de un fallo de seguridad?
+$Los requerimientos para la seguridad de información de los sistemas y prcesos para implementar dicha seguridad, son integrados en las primeras etapas de los proyectos de sistemas?
+^Procesamiento Correcto en Aplicaciones
+$Los datos introducidos a los sistemas, son validados para asegurar que son correctos y apropiados?
+$Los controles tales como: Diferentes tipos de mensajes de error para datos mal ingresados, Procedimientos para responder a los errores de validación, definición de responsabilidades para todo el personal envuelto en la carga de datos, etc. son considerados?
+$Son incorporadas validaciones en las aplicaciones para detectar/prevenir que puedan ser ingresados datos no válidos por error o deliberadamente?
+$Se tiene en cuenta en el diseño y la implementación de las aplicaciones que el riesgo de falllas en el procesamiento que conduzcan a perdida de integridad de datos sea minimizado?
+$Los requerimientos para aseguramiento y protección de la integridad de los mensajes en las aplicaciones, son debidamente identificados e implementados los controles necesarios?
+$Si una evaluación de riesgos de seguridad se llevó a cabo para determinar si es necesaria la integridad del mensaje, y para determinar el método más apropiado de aplicación.
+$Los sistemas de aplicaciones de salida de datos, son validados para asegurar que el procesamiento de información almacenada sea correcta y apropiada a las circustancias?
+^Controles Criptográficos
+$La organización posee políticas de uso de controlec criptográficos para protección de la información? Estas políticas son implementadas con éxito?
+$La política criptográfica considera el enfoque de gestión hacia el uso de controles criptográficos, los resultados de la evaluación de riesgo para identificar nivel requerido de protección, gestión de claves y métodos de diversas normas para la aplicación efectiva?
+$La administración de claves se utiliza efectivamente para apoyar el uso de técnicas criptográficas en la organización?
+$Las claves criptográficas están protegidas correctamente contra modificación, pérdida y/o destrucción?
+$Las claves públicas y privadas están protegidas contra divulgación no autorizada?
+$Los equipos utilizados para generar o almacenar claves, están físicamente protegidos?
+$Los sistemas de administración de claves, están basados en procedimientos estandarizados y seguros?
+^Seguridad de los Archivos de Sistemas
+$Existen procedimientos para controlar la instalación de software en los sistemas operativos (Esto es para minimizar el riesgo de corrupción de los sistemas operativos)
+$Los sistemas de testeo de datos, están debidamente protegidos y controlados? ‎ La utilización de información personal o cualquier información sensitiva para propósitos de testeo, está prohibida?
+$Existen controles estrictos de modo a restringir el acceso al código fuente? (esto es para prevenir posibles cambios no autorizados)
+^Seguridad en el Desarrollo y Servicios de Soporte
+$Existen procedimientos de control estricto con respecto a cambios en los sistemas de información? ‎‎(Esto es para minimizar la posible corrupción de los sistemas de información)‎
+$Estos procedimientos aborda la necesidad de evaluación de riesgos, análisis de los impactos de los cambios?
+$Existen procesos a seguir o procedimientos para revisión y testeo de las aplicaciones críticas de negocio y seguridad, luego de cambios en el Sistema Operativo? Periódicamente, esto es necesario cada vez que haya que hacer un parcheo o upgrade del sistema operativo.
+$Las modificaciones a los paquetes de software, son desalentadas o limitadas extrictamente a los cambios mínimos necesarios?
+$Todos los cambios son estrictamente controlados?
+$Existen controles para prevenir la fuga de información?
+$Controles tales como escaneo de dispositivos de salida, monitoreo regular del personal y actividades permitidas en los sistemas bajo regulaciones locales, monitoreo de recursos, son considerados?
+$El desarrollo de software tercerizado, es supervisado y monitoreado por la organización?
+$Puntos como: Adquisición de licencias, acuerdos de garantía, requerimientos contractuales de calidad asegurada, testeo antes de su instalación definitiva, revisión de código para prevenir troyanos, son considerados?
+^Seguridad en el Desarrollo y Servicios de Soporte
+$Se obtiene información oportuna en tiempo y forma sobre las vulnerabilidades técnicas de los sistemas de información que se utilizan?
+$La organización evalúa e implementa medidas apropiadas de mitigación de riesgos a las vulnerabilidades a las que está expuesta?
+#Gestión de Incidentes de Seguridad de Información
+^Reportando Eventos de Seguridad y Vulnerabilidades
+$Los eventos de seguridad de información, son reportados a través de los canales correspondientes lo más rápido posible?
+$Son desarrollados e implementados procedimientos formales de reporte, respuesta y escalación en incidentes de seguridad?
+$Existen procedimientos que aseguren que todos los empleados deben reportar cualquier vulnerabilidad en la seguridad en los servicios o sistemas de información?
+^Gestión de Incidentes de Seguridad de la Información y Proceso de Mejoras
+$Están claramente establecidos los procedimientos y responsabilidades de gestión para asegurar una rápida, efectiva y ordenada respuesta a los incidentes de seguridad de información?
+$Es utilizado el monitoreo de sistemas, alertas y vulnerabilidades para detectar incidentes de seguridad?
+$Los objetivos de la gestión de incidentes de seguridad de información, están acordados con las gerencias?
+$Existen mecanismos establecidos para identificar y cuantificar el tipo, volumen y costo de los incidentes de seguridad?
+$La información obtenida de la evaluación de incidentes de seguridad que ocurrieron en el pasado, es utilizada para determinar el impacto recurrente de incidencia  y corregir errores?
+$Si las medidas de seguimiento contra una persona u organización después de un incidente de seguridad de la información implica una acción legal (ya sea civil o penal)
+$Las evidencias relacionadas con incidentes, son recolectadas, retenidas y presentadas conforme las disposiciones legales vigentes en las jurisdicciones pertinentes?
+$Los procedimientos internos son desarrollados y seguidos al pié de la letra cuando se debe recolectar y presentar evidencia para propósitos disciplinarios dentro de la organización?
+#Gestión de la Continuidad del Negocio
+^Gestión de la Continuidad del Negocio
+$Existen procesos que direccionan los requerimientos de seguridad de información para el desarrollo y mantenimiento de la Continuidad del Negocio dentro de la Organización?
+$Estos procesos, entienden cuales son los riesgos que la organización enfrenta, identifican los activos críticos, los impactos de los incidentes, consideran la implementación de controles preventivos adicionales y la documentación de los Planes de Continuidad del Negocio direccionando los requerimientos de seguridad?
+$Los eventos que puedan causar interrupción al negocio, son identificados sobre la base de probabilidad, impacto y posibles consecuencias para la seguridad de información?
+$Son desarrollados planes para mantener y restaurar las operaciones de negocio, asegurar disponibilidad de información dentro de un nivel aceptable y en el rango de tiempo requerido siguiente a la interrupción o falla de los procesos de negocio?
+$Considera el Plan, la identificación y acuerdo de responsabilidades, identificación de pérdida aceptable, implementación de procedimientos de recuperación y restauración, documentación de procedimientos y testeo periódico realizado regularmente?
+$Existe un marco único del Plan de Continuidad de Negocios?
+$Este marco, es mantenido regularmente para asegurarse que todos los planes son consistentes e identifican prioridades para testeo y mantenimiento?
+$El Plan de Continuidad del Negocio direccionan los requerimientos de seguridad de información identificados?
+$Los Planes de Continuidad del Negocio, son probados regularmente para asegurarse de que están actualizados y son efectivos?
+$Los tests de planes de continuidad de negocio, aseguran que todos los miembros del equipo de recuperación y otros equipos relevantes sean advertidos del contenido y sus responsabilidades para la continuidad del negocio y la seguridad de información, son concientes de sus roles y funciones dentro del plan cuando este se ejecuta?
+#Cumplimiento
+^Cumplimiento con Requerimientos Legales
+$Todas las leyes relevantes, regulaciones, requerimientos contractuales y organizacionales son tenidos en cuenta de modo a que estén documentados para cada sistema de información en la organización?
+$Los controles específicos y responsabilidades individuales de modo a cumplir con estos requerimientos, son debidamente definidos y documentados?
+$Existen procedimientos para asegurar el cumplimiento de los requerimientos legales, regulatorios y contractuales sobre el uso de materiales y software que estén protegidos por derechos de propiedad intelectual?
+$Estos procedimientos, están bien implementados?
+$Controles tales como: Política de Cumplimiento de Derechos de Propiedad Intelectual, Procedimientos de Adquisición de Software, Política de concientización, Mantenimiento de Prueba de la Propiedad, Cumplimiento con Términos y Condiciones, son consideradas?
+$Los registros importantes de la organización están protegidos contra pérdida, destrucción y falsificación en concordancia con los requerimientos legales, regulatorios, contractuales y de negocio?
+$Están previstas las consideraciónes con respecto al posible deterioro de medios de almacenamiento utilizados para almacenar registros?
+$Los sistemas de almacenamiento son elegidos de modo a que los datos requeridos puedan ser recuperados en un rango de tiempo aceptable y en el formato necesario, dependiendo de los requerimientos a ser cumplidos?
+$La protección de los datos y la privacidad, están asegurados por legislaciones relevantes, regulaciones y si son aplicables, por cláusulas contractuales?
+$El uso de instalaciones de proceso de información para cualquier propósito no autorizado o que no sea del negocio, sin la aprobación pertinente, es tratada como utilización impropia de las instalaciones?
+$Los mensajes de alerta de ingreso, son desplegados antes de permitir el ingreso a la red o a los sistemas?   El usuario tiene conocimiento de las alertas y reacciona apropiadamente al mensaje en pantalla?
+$Es realizado un asesoramiento jurídico, antes de aplicar cualquier procedimiento de monitoreo y control?
+$Los controles criptográficos son usados en cumplimiento de los acuerdos contractuales establecidos, leyes y regulaciones?
+^Cumplimiento con Requerimientos Legales
+$Los Administradores se aseguran que todos los procedimientos dentro de su area de responsabilidad, se llevan a cabo correctamente para lograrl el cumplimiento de las normas y políticas de seguridad?
+$Los Administradores, revisan regularmente el cumplimiento de las instalaciones de procesamiento de información dentro del area de su responsabilidad de modo a cumplir con los procedimientos y políticas de seguridad pertinentes?
+$Los sistemas de información son regularmente revisados con respecto al cumplimiento de estándares de seguridad?
+$La verificación técnica es llevada a cabo por, o bajo la supervisión de, personal técnico competente y autorizado?
+^Consideraciones de Auditoría de Sistemas
+$Los requerimientos y actividades de auditoría, incluyen verificación de sistemas de información  que fueron previamente planeados cuidadosamente de modo a minimizar los riesgos de interrupciones en el proceso de negocio? 
+$Los requerimientos de auditoria son alcanzables y de acuerdo con una gestión adecuada?
+$La información a la que se accede por medio de las herramientas de auditoría, ya sean software o archivos de datos, están protegidos para prevenir el mal uso o fuga no autorizada?
+$El ambiente de auditoría está separado de los ambientes operacionales y de desarrollo, a penos que haya un nivel apropiado de protección?
