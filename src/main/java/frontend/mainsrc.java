@@ -21,7 +21,7 @@ public class mainsrc extends javax.swing.JFrame {
         this.control = control;
         control.addRowsSetUp(this.jTable1);
         this.setVisible(true);
-
+        
 
     }
 

@@ -5,30 +5,41 @@
  */
 package Objects;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author eclipse
  */
 public class ClassType {
     public String name;
-    public String[][] subtypeQuestionsAnswers;
+    public ArrayList<ArrayList<String>> subtypeQuestionsAnswers;
+    public ArrayList<String> subtitles;
     public int percentOfValidation;
     public int[] answers;
     
-    public ClassType(String name, String[][] subtypeQuestionsAnswers, int[] anwsers){
+    public ClassType(String name){
         this.name = name;
-        this.subtypeQuestionsAnswers = subtypeQuestionsAnswers;
-        this.percentOfValidation = 0;
-        this.answers = anwsers;
+        subtypeQuestionsAnswers = new ArrayList<ArrayList<String>>();
+        subtitles = new ArrayList<String>();
     }
     
     public void addName(String name){
         this.name = name;
     }
     
-    public void addQuestion(String[][] subtypeQuestionsAnswers){
+    public void addQuestion(String question, int index){
+        subtypeQuestionsAnswers.get(index).add(question);
+    }
+    
+    public void addQuestions(ArrayList<ArrayList<String>> subtypeQuestionsAnswers){
         this.subtypeQuestionsAnswers = subtypeQuestionsAnswers;
 
+    }
+    
+    public void addSubtitle(String sub){
+        subtitles.add(sub);
+        subtypeQuestionsAnswers.add(new ArrayList<>());
     }
     
     public int setTotalPercent(){
@@ -44,8 +55,8 @@ public class ClassType {
     
     @Override
     public String toString(){
-        String s = "Nombre: " + name + " con los valores:";
-        for (String[] x: subtypeQuestionsAnswers){
+        String s = "Nombre: " + name + " con los valores:\n";
+        for (ArrayList<String> x: subtypeQuestionsAnswers){
             for (String y: x){
                 s += y + "\n";
             }

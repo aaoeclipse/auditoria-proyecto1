@@ -20,31 +20,52 @@ import java.util.logging.Logger;
  */
 public class DataRecollector {
 
-    public ArrayList<ArrayList<String>> stringArrayInfo = new ArrayList<ArrayList<String>>();
+    private ArrayList<ArrayList<String>> stringArrayInfo = new ArrayList<ArrayList<String>>();
+    private ArrayList<String> subTitulos =  new ArrayList<String>();
+    private ArrayList<String> Titulos =  new ArrayList<String>();
+
 //    String[] item = fruitList.toArray(new String[fruitList.size()]);  
 
     public ClassType[] GetDataFromFile() {
-//        URL url = DataRecollector.class.getResource("../data/texto_separado.txt").getFile();
+//        URL url = DataRecollector.c   lass.getResource("../data/texto_separado.txt").getFile();
         System.out.println("Trying to get file...");
+        ClassType[] item = null;
 
         File file = new File("/home/eclipse/NetBeansProjects/mavenproject1/src/main/java/data/texto_separado.txt");
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
             String tmpString;
+            ArrayList<ClassType>  tmpClassType= new ArrayList<ClassType>();
+            ClassType temp;
+            int counter = 0;
+            int counterSub = 0;
+            
+
             while ((tmpString = br.readLine()) != null) {
+                
                 switch (tmpString.charAt(0)){
                         case '#':
                             tmpString = tmpString.substring(1);
+                            temp = new ClassType(tmpString);
+                            tmpClassType.add(temp);
+                            counter++;
+                            counterSub = 0;
                             break;
                         case '^':
                             tmpString = tmpString.substring(1);
+                            tmpClassType.get(counter-1).addSubtitle(tmpString);
+                            counterSub++;
+                  
                             break;
                         case '$':
                             tmpString = tmpString.substring(1);
+                            tmpClassType.get(counter-1).addQuestion(tmpString, counterSub-1);
                             break;
-                }
+                }            
             }
+            
+            item = tmpClassType.toArray(new ClassType[tmpClassType.size()]); 
 
         } catch (FileNotFoundException ex) {
             Logger.getLogger(DataRecollector.class.getName()).log(Level.SEVERE, "HIHIHIHIH", "");
@@ -53,8 +74,8 @@ public class DataRecollector {
             Logger.getLogger(DataRecollector.class.getName()).log(Level.SEVERE, "HIHIHIHIH", "");
             Logger.getLogger(DataRecollector.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-        return null;
+        
+        return item;
     }
 
 }

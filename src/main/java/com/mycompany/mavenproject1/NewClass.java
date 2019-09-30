@@ -29,11 +29,11 @@ public class NewClass {
           }
     }
     public static void main(String[] args){
-          NewClass test = new NewClass();
-          test.PrintInfo();
+//          NewClass test = new NewClass();
+//          test.PrintInfo();
 //        System.out.println("Starting...");
-//        controller control = new controller();
-//        mainsrc gui = new mainsrc(control);
+        controller control = new controller();
+        mainsrc gui = new mainsrc(control);
         
         
     }
