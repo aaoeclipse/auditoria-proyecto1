@@ -9,6 +9,7 @@ import Objects.ClassType;
 import backend.DataRecollector;
 import javax.swing.JTable;
 import java.io.*;
+import java.util.ArrayList;
 import javax.swing.JLabel;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
@@ -64,13 +65,14 @@ public class controller {
         String[][] data;
         String[] columnNames = {"Pregunta", "Que tan cierto"};
         System.out.println("test test: "+ info.subtypeQuestionsAnswers.size());
-        data = new String[info.subtypeQuestionsAnswers.size()][2];
+        
         int counter = 0;
-
-        for (int i = 0; info.subtypeQuestionsAnswers.size() > i; i++) {
-            for (String s : info.subtypeQuestionsAnswers.get(i)) {
-                data[i][0] = s;
-                data[i][1] = "0%";
+        data = new String[countElements(info.subtypeQuestionsAnswers)][2];
+        
+        for(ArrayList<String> as : info.subtypeQuestionsAnswers) {
+            for (String s : as) {
+                data[counter][0] = s;
+                data[counter][1] = "0%";
                 counter++;
 
             }
@@ -81,6 +83,16 @@ public class controller {
                 columnNames
         ));
 
+    }
+    
+    private int countElements(ArrayList<ArrayList <String>> test){
+        int counter=0;
+        for(ArrayList<String> as : test){
+            for (String s: as){
+                counter++;
+            }
+        }
+        return counter;
     }
 
 }
