@@ -5,25 +5,39 @@
  */
 package frontend;
 
+import Objects.ClassType;
+import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 
 /**
  *
  * @author eclipse
  */
 public class mainsrc extends javax.swing.JFrame {
+    private String[] columnNames = {"Nombre de Control", "Estado"};
+    private String[][] data;
     public controller control;
+    private ClassType[] tiposEvaluacion;
+
     /**
      * Creates new form mainsrc
      */
     public mainsrc(controller control) {
         initComponents();
-        System.out.println("gui");
         this.control = control;
-        control.addRowsSetUp(this.jTable1);
+        addRowsSetUp();
         this.setVisible(true);
-        
-
     }
+    
+//    public mainsrc(controller control, ClassType[] tiposEvaluacion) {
+//        initComponents();
+//        this.control = control;
+//        this.tiposEvaluacion = tiposEvaluacion;
+//        addRowsSetUp();
+//        this.setVisible(true);
+//    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -34,6 +48,7 @@ public class mainsrc extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -41,6 +56,17 @@ public class mainsrc extends javax.swing.JFrame {
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jTabbedPane4 = new javax.swing.JTabbedPane();
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -129,9 +155,37 @@ public class mainsrc extends javax.swing.JFrame {
 //            }
 //        });
 //    }
+    public void addRowsSetUp() {
+        tiposEvaluacion = control.tiposEvaluacion;
+        data = control.data;
+//        table = new JTable(data, columnNames); 
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+                data,
+                columnNames
+        ));
+        ListSelectionModel model = jTable1.getSelectionModel();
+        model.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (!model.isSelectionEmpty()) {
+                    // Get selected row
+                    int selectedRow = model.getMinSelectionIndex();
+                    createNewGui(selectedRow);
+                }
+            }
+        });
+    }
 
+    public void createNewGui(int selectedRow) {
+        this.setVisible(false);
+        this.getContentPane().removeAll();
+        Questions guiQuestion = new Questions(tiposEvaluacion, selectedRow);
+
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;

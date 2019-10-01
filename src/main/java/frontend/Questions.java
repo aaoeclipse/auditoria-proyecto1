@@ -6,14 +6,19 @@
 package frontend;
 
 import Objects.ClassType;
+import java.util.ArrayList;
 
 /**
  *
  * @author eclipse
  */
 public class Questions extends javax.swing.JFrame {
+
     private ClassType info;
     private controller control;
+    private ClassType[] infoArray;
+    private int row;
+
     /**
      * Creates new form Questions
      */
@@ -23,6 +28,16 @@ public class Questions extends javax.swing.JFrame {
         this.info = info;
         this.control = new controller();
         control.questionTableSetup(jTable1, jLabel1, info);
+    }
+
+    public Questions(ClassType[] info, int row) {
+        initComponents();
+        this.setVisible(true);
+        this.info = info[row];
+        this.infoArray = info;
+        this.row = row;
+        this.control = new controller();
+        control.questionTableSetup(jTable1, jLabel1, info[row]);
     }
 
     /**
@@ -66,6 +81,11 @@ public class Questions extends javax.swing.JFrame {
         });
 
         jButton2.setText("Save");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -105,9 +125,26 @@ public class Questions extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        mainsrc gui = new mainsrc(control);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        int counter = 0;
+        for (int i = 0; i < infoArray[row].subtypeQuestionsAnswers.size(); i++) {
+            for (int j = 0; j < infoArray[row].subtypeQuestionsAnswers.get(i).size(); j++) {
+                infoArray[row].answers.set(counter, Integer.parseInt((String) jTable1.getModel().getValueAt(counter, 1)));
+                counter++;
+            }
+        }
+        this.setVisible(false);
+        control.setClassArray(infoArray);
+        mainsrc gui = new mainsrc(control);
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+    public void PrintInfo() {
+        System.out.println(info);
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

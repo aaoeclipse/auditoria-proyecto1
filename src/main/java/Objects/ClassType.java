@@ -16,12 +16,14 @@ public class ClassType {
     public ArrayList<ArrayList<String>> subtypeQuestionsAnswers;
     public ArrayList<String> subtitles;
     public int percentOfValidation;
-    public int[] answers;
+    public ArrayList<Integer> answers;
     
     public ClassType(String name){
         this.name = name;
         subtypeQuestionsAnswers = new ArrayList<ArrayList<String>>();
         subtitles = new ArrayList<String>();
+        answers = new ArrayList<Integer>();
+
     }
     
     public void addName(String name){
@@ -30,10 +32,7 @@ public class ClassType {
     
     public void addQuestion(String question, int index){
         subtypeQuestionsAnswers.get(index).add(question);
-    }
-    
-    public void addQuestions(ArrayList<ArrayList<String>> subtypeQuestionsAnswers){
-        this.subtypeQuestionsAnswers = subtypeQuestionsAnswers;
+        answers.add(0);
 
     }
     
@@ -44,10 +43,9 @@ public class ClassType {
     
     public int setTotalPercent(){
         int sum = 0;
-        int total = answers.length;
-        for(int i=0; answers.length >= i; i++){
-            //TODO: we need to make this work
-            sum += answers[i];
+        int total = answers.size();
+        for(int i=0; answers.size() > i; i++){
+            sum += answers.get(i);
         }
         percentOfValidation = (int) (sum / total);
         return percentOfValidation;
