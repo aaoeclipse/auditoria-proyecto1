@@ -6,10 +6,18 @@
 package frontend;
 
 import Objects.ClassType;
+import java.awt.Color;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartFrame;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
@@ -20,6 +28,10 @@ public class mainsrc extends javax.swing.JFrame {
     private String[][] data;
     public controller control;
     private ClassType[] tiposEvaluacion;
+    private ChartPanel chartPanel;
+    private JFreeChart jchart;
+    private CategoryPlot plot;
+    
 
     /**
      * Creates new form mainsrc
@@ -49,13 +61,11 @@ public class mainsrc extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        test = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jTabbedPane2 = new javax.swing.JTabbedPane();
-        jTabbedPane3 = new javax.swing.JTabbedPane();
-        jTabbedPane4 = new javax.swing.JTabbedPane();
+        jButton1 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -83,21 +93,37 @@ public class mainsrc extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        jButton1.setText("Graficar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 941, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1079, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addComponent(jButton1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 531, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(jButton1)
+                .addGap(0, 45, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Preguntas", jPanel1);
-        jTabbedPane1.addTab("Cumplimiento por Control", jTabbedPane2);
-        jTabbedPane1.addTab("Cumplimiento por Dominio", jTabbedPane3);
-        jTabbedPane1.addTab("Representación Gráfica", jTabbedPane4);
+        test.addTab("Cumplimineto por Control", jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -105,21 +131,47 @@ public class mainsrc extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1)
+                .addComponent(test)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1)
+                .addComponent(test)
                 .addContainerGap())
         );
 
-        jTabbedPane1.getAccessibleContext().setAccessibleName("Preguntas");
+        test.getAccessibleContext().setAccessibleName("Preguntas");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        DefaultCategoryDataset dcd = new DefaultCategoryDataset ();
+        String[] nombreCategoria = new String[tiposEvaluacion.length];
+        int[] promedio = new int[tiposEvaluacion.length];
+        for (int i=0;i<tiposEvaluacion.length;i++){
+            nombreCategoria[i] = tiposEvaluacion[i].name;
+            promedio[i] = tiposEvaluacion[i].setTotalPercent();
+            
+        }
+//        int promedio []=  {1,2,3,4,5,6,7,8};
+//        String [] nombreCategoria = {"Apple", "Banana", "Orange", "Grapes","A", "B", "O", "G"};
+        int i;
+        for (i =0; i< promedio.length; i++) {
+           dcd.setValue(promedio[i],nombreCategoria[i],nombreCategoria[i] );
+        }
+        jchart = ChartFactory.createBarChart("Estado Actual", "Categoria", "Porcentaje", dcd, PlotOrientation.VERTICAL, true, true, false);
+        plot = jchart.getCategoryPlot();
+       
+        plot.setRangeGridlinePaint(Color.BLACK);
+        
+        ChartFrame chartFrm = new ChartFrame("Estado Actual",jchart,true);
+        chartFrm.setVisible(true);
+        chartFrm.setSize(500,400);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,13 +236,11 @@ public class mainsrc extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTabbedPane jTabbedPane2;
-    private javax.swing.JTabbedPane jTabbedPane3;
-    private javax.swing.JTabbedPane jTabbedPane4;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTabbedPane test;
     // End of variables declaration//GEN-END:variables
 }
